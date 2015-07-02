@@ -1,3 +1,6 @@
+export TERM=xterm-256color
+
+#
 # Load any user customizations prior to load
 #
 if [ -d $HOME/.zsh.before/ ]; then
