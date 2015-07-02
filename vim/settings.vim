@@ -8,7 +8,8 @@ for fpath in split(globpath(vimsettings, '*.vim'), '\n')
   endif
 
   if (fpath == expand(vimsettings) . "/yadr-keymap-linux.vim") && uname[:4] !=? "linux"
-    continue " skip linux mappings for mac
+    " nkgm: always load linux shortcuts for using in iterm
+    " continue " skip linux mappings for mac
   endif
 
   exe 'source' fpath
