@@ -24,9 +24,12 @@ while c <= 'Z'
 endw
 set timeout ttimeoutlen=50
 
+
+
+
 " iTerm2 change cursor shape in normal/insert mode
-let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+" let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+" let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
 " highlight current line in insert mode
 :autocmd InsertEnter,InsertLeave * set cul!
